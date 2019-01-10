@@ -4,7 +4,7 @@ Reads through NBA play-by-play text documents and parses through the given data 
 My friend @gct38 and I participated in an NBA hackathon last summer and wrote this program. The hardest challenge was that free throws count toward the plus/minuses of the players that were on the court for the foul, not for the substituted in players during the free throws. We solved this by creating a "queue" to store pending substitutions and applying them following the free throws.
 
 # Provided Data:
-- NBA Hackathon – Event Codes.txt
+- NBA Hackathon – Event Codes.txt <br />
 o This dataset provides look up values for the event message types and action types found in the play by play dataset. Each code is converted to an English language description of the event.
 
 - NBA Hackathon – Game Lineup Data Sample (50 Games).txt <br />
