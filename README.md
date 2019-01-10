@@ -17,8 +17,7 @@ o This dataset provides start of period player availability. <br />
 
 - NBA Hackathon – Play by Play Sample (50 Games).txt
 o This dataset provides play by play information on the event level for each game. <br />
-o To properly sort the events in a game use the following sequence of sorted columns: Period (ascending), PC_Time (descending), WC_Time (ascending), Event_Number (ascending) <br />
-▪ Event_Number – An ordered counter for each event in a game. Note, this number may not be perfectly sequential so please use the sorting methodology outlined above <br />
+▪ Event_Number – An ordered counter for each event in a game. <br />
 ▪ Event_Msg_Type, Action_Type – Coded descriptions of what happened during the event <br />
 ▪ WC_Time – The in-arena time of the event in Unix format. It is coded in tenths of a second. <br />
 ▪ PC_Time – The time on the game clock in tenths of a second (e.g. 7200 corresponds to 720 seconds/12 minutes remaining in the quarter) <br />
@@ -26,7 +25,7 @@ o To properly sort the events in a game use the following sequence of sorted col
 • On free throw attempts, if the value in this column is 1, it means it was a made free throw, otherwise, it was missed. <br />
 ▪ Person1, Person2 – The person_ids of the players who are directly associated with the event (e.g. If the event is an assisted made basket, Person1 is the shot maker and Person2 is the player who assisted) <br />
 • In the case of a substitution, the Event_Msg_Type will be 8, Person1 will be the ID for the player leaving the game, and Person2 will be the ID for the player entering the game. <br />
-▪ Team_id – In most scenarios, this is the Team ID associated with the Person1 column. However, there are instances when this is not the case. To accurately and consistently identify a player’s team, we suggest merging in the Game Lineup dataset on the Person1 and Person2 columns. <br />
+▪ Team_id – In most scenarios, this is the Team ID associated with the Person1 column. However, there are instances when this is not the case. <br />
 
 - output.csv
 o This is the resulting file with the plus/minuses of all of the players in the given games
