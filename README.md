@@ -9,23 +9,23 @@ o This dataset provides look up values for the event message types and action ty
 
 - NBA Hackathon – Game Lineup Data Sample (50 Games).txt <br />
 o This dataset provides start of period player availability. <br />
-▪ Game_id – A unique game code for each game <br />
-▪ Period (Quarter) – The associated period of the line up (overtime period are indicated by values greater than 4) <br />
-▪ Person_id – A unique identifier for each player <br />
-▪ Team_id – A unique identifier for each team <br />
-▪ Status – A variable indicating whether a player is active (A) or inactive (I) <br />
+> ▪ Game_id – A unique game code for each game <br />
+> ▪ Period (Quarter) – The associated period of the line up (overtime period are indicated by values greater than 4) <br />
+> ▪ Person_id – A unique identifier for each player <br />
+> ▪ Team_id – A unique identifier for each team <br />
+> ▪ Status – A variable indicating whether a player is active (A) or inactive (I) <br />
 
-- NBA Hackathon – Play by Play Sample (50 Games).txt
+- NBA Hackathon – Play by Play Sample (50 Games).txt <br />
 o This dataset provides play by play information on the event level for each game. <br />
-▪ Event_Number – An ordered counter for each event in a game. <br />
-▪ Event_Msg_Type, Action_Type – Coded descriptions of what happened during the event <br />
-▪ WC_Time – The in-arena time of the event in Unix format. It is coded in tenths of a second. <br />
-▪ PC_Time – The time on the game clock in tenths of a second (e.g. 7200 corresponds to 720 seconds/12 minutes remaining in the quarter) <br />
-▪ Option 1 – On a shot attempt, this column will tell you the point value of the shot <br />
-• On free throw attempts, if the value in this column is 1, it means it was a made free throw, otherwise, it was missed. <br />
-▪ Person1, Person2 – The person_ids of the players who are directly associated with the event (e.g. If the event is an assisted made basket, Person1 is the shot maker and Person2 is the player who assisted) <br />
-• In the case of a substitution, the Event_Msg_Type will be 8, Person1 will be the ID for the player leaving the game, and Person2 will be the ID for the player entering the game. <br />
-▪ Team_id – In most scenarios, this is the Team ID associated with the Person1 column. However, there are instances when this is not the case. <br />
+> ▪ Event_Number – An ordered counter for each event in a game. <br />
+> ▪ Event_Msg_Type, Action_Type – Coded descriptions of what happened during the event <br />
+> ▪ WC_Time – The in-arena time of the event in Unix format. It is coded in tenths of a second. <br />
+> ▪ PC_Time – The time on the game clock in tenths of a second (e.g. 7200 corresponds to 720 seconds/12 minutes remaining in the quarter) <br />
+> ▪ Option 1 – On a shot attempt, this column will tell you the point value of the shot <br />
+> • On free throw attempts, if the value in this column is 1, it means it was a made free throw, otherwise, it was missed. <br />
+> ▪ Person1, Person2 – The person_ids of the players who are directly associated with the event (e.g. If the event is an assisted made basket, Person1 is the shot maker and Person2 is the player who assisted) <br />
+> • In the case of a substitution, the Event_Msg_Type will be 8, Person1 will be the ID for the player leaving the game, and Person2 will be the ID for the player entering the game. <br />
+> ▪ Team_id – In most scenarios, this is the Team ID associated with the Person1 column. However, there are instances when this is not the case. <br />
 
 - output.csv
 o This is the resulting file with the plus/minuses of all of the players in the given games
