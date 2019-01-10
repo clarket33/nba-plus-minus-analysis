@@ -27,7 +27,7 @@ o This dataset provides play by play information on the event level for each gam
 > • In the case of a substitution, the Event_Msg_Type will be 8, Person1 will be the ID for the player leaving the game, and Person2 will be the ID for the player entering the game. <br />
 > ▪ Team_id – In most scenarios, this is the Team ID associated with the Person1 column. However, there are instances when this is not the case. <br />
 
-- output.csv
+- output.csv <br />
 o This is the resulting file with the plus/minuses of all of the players in the given games
 
 
